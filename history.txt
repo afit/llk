@@ -1,0 +1,209 @@
+1.1.4 | ???k/???k | 13/01/00
+'*  tooltips! -- see exbutt for subclass mech
+'*  lll click fix
+'*  llt disappears -- only where bodycolour = colourup?
+'*  fix creep on LLC -- bad fix, only 100 initialisations per session
+'*  make llc work when maximised
+'*  subgradientole bug
+'*  fix memory hole in llc -- releasedc!!!
+'*  hole in subdrawbevel -- changebrush/pen
+'*  memory hole in drawtext/splittext -- changefont
+'*  infinite scaleup for lll & llt
+'*  memory hole in changing routines?
+'*  reimplement '98 cols pickup
+	nmbutton
+		gfx postition alteration
+	caption
+		text spacing fix
+		frames captionless forms
+		bug fix where caption killed app if called twice
+	button
+		default status shown in all mouse states
+	panel
+		percentage fix
+	text
+		percentage fix
+	text positioning done with global routines
+	colours routines sped again!!
+	bodycolour implemented for every control
+	controls have '3d' disabled text
+	colours accurately scaled with hsl
+1.1.3 | ???k/???k | 27/12/99
+	tick
+		gradients fixed
+	panel
+		speeded percentage rendering
+	better text aligning
+1.1.2 | 360k/328k | 26/12/99
+	caption
+		look property
+	divider
+		transparent background
+	button
+		transparent gfx supported
+		behavioural: no mouseup or click when mouse off
+	tick
+		eliminated 'background' white colour
+		grey check implemented
+		enabled property
+		transparent background
+		minor gfx fixes
+		alignment properties
+	label
+		transparent background
+	lots more api
+	caption added to freeware controls
+1.1.1 (incompatibility!)
+	uncompiled move to 1.1 stamp
+	integration of new llc
+1.0.22 | 364k/???k | 20/12/99 | (straight from .17 unreleased)
+	API integration & ole compatibility issues
+	seperate dev of llc
+	gradient 100% speed increase
+	40k reduction
+	common public gfx routines
+1.0.17 | 404k/???k | 15/08/99 |
+	panel
+		implemented dragdrop
+1.0.16 | 404k/???k | 11/05/99 |
+	label
+		fixed lll hyperlink colourback error
+	panel
+		graphic ratios fixed (again!!)
+1.0.15 | 400k/312k | 08/05/99 (fifth release)
+	text
+		input fixes
+	tab
+		no mouse grabbing if lookup = lookflat
+	panel
+		implemented ole dragdrop
+		added align property
+		removed image control
+	gradients rewrite (30% speed increase)
+	colour routines rewritten
+	total api drawing (TAD)
+	tab
+		main behavioural code
+		no captions implemented
+1.0.14 | ???k/???k | 03/04/99 (fourth release)
+	public release for web-site
+1.0.13 | ???k/???k | 31/03/99
+	tab
+	text
+		limited to single line
+		cut, copy & paste
+		follows cursor
+		alignment
+1.0.12 | ???k/???k |
+	mid-colour added
+	sharp colours softened
+	divider
+		sharp colours softened
+	text
+	tick
+		default value
+		valuechange event
+1.0.11 | ???k/???k |
+	panel
+		prevent redraw on perc change
+	tick
+		mousesentivity added
+	nmbutton
+		catch rewrite
+	button
+		catch rewrite
+1.0.10 | 288k / ---k | 21/03/99
+	caption
+		icons cleaned up
+	nmbutton
+		* major * behavioural fix
+		removal of image component use		
+	button
+		* major * behavioural fix
+		removal of image component use
+1.0.9 | 284k / ???k | 26/02/99
+	caption
+		put into WIP
+	panel
+		'white dot' prob fixed
+	nmbutton
+		mousedown only works with one button
+		accesskeys rewrite
+	button
+		mousedown only works with one button
+		accesskeys rewrite
+1.0.8 | 288k / ???k | 24/02/99
+	tick
+	panel
+		percentage prop implemented
+	nmbutton
+		rewrote release up after mousedown
+	button
+		rewrote release up after mousedown
+		fixed single click selection
+		fixed disabled gfx
+		3d disabled text
+		spacebar down feature
+	caption
+		min, max buttons fixed
+1.0.7 | 224k / 197k | 14/02/99
+	button
+		adjusted maxwidth, maxheight
+	panel
+		gradient property recalling fixed
+1.0.6 | 221k / 196k | 13/02/99
+	slight gradient length fix (LLC & LLP)
+	improved licensing updates
+	coexisting version split - license & unlicensed
+	caption
+		images fixed
+	panel
+		images fixed
+		images & gradient allowed
+	button
+		picturedown implemented
+		picturedown & picturedisabled 'covering' implemented
+	nmbutton
+		picturedown implemented
+		picturedown & picturedisabled 'covering' implemented
+1.0.5 | 217k | 13/02/99 (incompatibilty!)
+	fixed non-show calls
+	included 'mention' license restriction
+	caption
+		fixed default icon error
+		implemented 'dragging'
+		implemented buttons' actions & events + gfx
+1.0.4 | 210k | 12/02/99 (third release)
+	improved object mode setting - gfx
+	button
+		mouseup fixed
+	label
+		fixed font change with no lightup
+1.0.3 | 206k | 11/02/99 (second release) (incorrect date - 12th) (incompatibilty!)
+	implementation of standard graphics routines
+	global licensing
+	nmbutton
+	caption (no movement implemented)
+1.0.2 | 143k | 07/02/99
+	panel
+		background set
+	button
+		graphical mouseup problem fixed
+		better [&] label centring
+	label
+		licensing issue (unlicensed on mouseover)
+		linking perma underline removed
+		linking cursor implemented
+1.0.1 | 144k | 07/02/99 (incompatibilty!)
+	divider
+	button
+		default & cancel
+		ALT access
+		font probs fixed
+	label
+		wrapping
+		font probs fixed
+	panel
+1.0.0 | 68.5k | 03/02/99 (first release) (incompatibilty!)
+	button
+        label
