@@ -1,0 +1,1788 @@
+<style>
+// Was https://reincubate.com/res/css/llk.css
+
+body {
+    font-family: Verdana, Helvetica, Arial, Lucida, Tahoma;
+    font-size: 12
+}
+
+p {
+    font-family: Verdana, Helvetica, Arial, Lucida, Tahoma;
+    font-size: 12
+}
+
+font.hilight {
+    color: red
+}
+
+li {
+    font-family: Verdana, Helvetica, Arial, Lucida, Tahoma;
+    font-size: 12
+}
+
+table {
+    font-family: Verdana, Helvetica, Arial, Lucida, Tahoma;
+    font-size: 12;
+    border-width: 0;
+    width: 100%
+}
+
+td.title {
+    background-color: #000;
+    color: #fff;
+    text-align: Left;
+    font-weight: Bold;
+    width: 100%;
+    font-size: 14
+}
+
+td.desc {
+    background-color: #ddd;
+    color: #000;
+    text-align: Right;
+    font-weight: Bold;
+    width: 20%
+}
+
+hr {
+    color: olive;
+    height: 2
+}
+
+a:link {
+    color: green;
+    text-decoration: None
+}
+
+a:active {
+    color: green;
+    text-decoration: None
+}
+
+a:visited {
+    color: green;
+    text-decoration: None
+}
+
+a:hover {
+    color: #00c000;
+    text-decoration: Underline
+}
+</style>
+
+<table>
+	<tr>
+		<td class="title" colspan="4">LothianLite Kit</td>
+	</tr>
+
+	<tr>
+		<td class="desc">object location:</td>
+		<td colspan="3">Products : LothianLite Kit</td>
+	</tr>
+	<tr>
+		<td class="desc">suitable for:</td>
+		<td colspan="3">Any Language</td>
+	</tr>
+	<tr>
+		<td class="desc">contact address:</td>
+		<td colspan="3"><script> generateAddress( 'troppus', 'Author' ); </script></td>
+	</tr>
+	<tr>
+		<td class="desc">constituent controls:</td>
+		<td colspan="3">
+			<ul>
+				<li><a href="#lln">LothianLite Non-Modal Button</a></li>
+				<li><a href="#lld">LothianLite Divider</a></li>
+				<li><a href="#llc">LothianLite Caption</a></li>
+				<li><a href="#llb">LothianLite Button</a></li>
+				<li><a href="#llp">LothianLite Panel</a></li>
+				<li><a href="#lll">LothianLite Label</a></li>
+				<li><a href="#llx">LothianLite Text</a></li>
+				<li><a href="#llt">LothianLite Tick</a></li>
+				<li><a href="#lla">LothianLite Tab</a></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td class="desc">last revision:</td>
+		<td colspan="3">14<sup>th</sup> January, 1999 - Version 1.1.4</td>
+	</tr>
+	<tr>
+		<td class="desc">beta controls:</td>
+		<td colspan="3">
+			The following controls are unrestricted beta:
+			<ul>
+				<li>LLX</li>
+				<li>LLA</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td class="desc">troubleshooting:</td>
+		<td><a href="#troubleshooting">Common Problems</a></td>
+	</tr>
+	<tr>
+		<td class="desc">history log:</td>
+		<td colspan="3"><a href="https://reincubate.com/res/labs/llk/history.txt">See file</a></td>
+	</tr>
+
+	<tr>
+		<td class="desc">availability:</td>
+		<td colspan="3"><a href="#downloads">See downloads</a></td>
+	</tr>
+
+
+	<tr>
+		<td class="desc">notes:</td>
+		<td class="desc" colspan="3"></td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="3">
+			Property variable type when marked with an asterisk (*) are enumerated to various limited values. Default properties are emboldened.
+			<br><br><i>
+			LICENSING ISSUES: The LLK control licensing is different from the norm.
+			<ol>
+			<li>The freeware controls are perfectly legal &amp; free to use and deploy for any application. If certain properties are changed, the controls display will 'Unlicensed'.</li>
+			<li>If you wish to purchase the licensed controls which do not have this limitation, please contact us
+			for pricing information.</li>
+			</ol>
+			</i>
+			Controls currently in beta or evaluation are completely unrestricted. Lothian Productions reserves the right to discontinue them without notice.
+			<br><br>
+			Not all beta controls will be issued with the freeware controls.
+			<br><br>
+			All registered users of the LLK controls <u>will</u> receive all updates released for no extra charge. Technical support is free and unlimited to licensed users through email.
+			<br><br>
+			The controls are safe for online scripting and initialisation as they do not perform any writes to the client hard-disk.
+		</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">screenshots:</td>
+		<td class="desc" colspan="2">control:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td>LothianLite Button</td>
+		<td><img src="https://reincubate.com/res/labs/llk/gifs/llb.gif"></td>
+		<td>All of these effects (and over ten others) can be achieved in any state (mouse off,  mouse down, mouse over) with all (barring the LothianLite Caption) of the LLK controls. The intelligent shading is a feature of the other controls too.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>LothianLite Divider</td>
+		<td><img src="https://reincubate.com/res/labs/llk/gifs/lld.gif"></td>
+		<td>Neat divider control.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>LothianLite Panel</td>
+		<td><img src="https://reincubate.com/res/labs/llk/gifs/llp.gif"></td>
+		<td>Uses customisable gradient, tiled image, and or inversive percentage bar. Holds controls.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>LothianLite NMButton</td>
+		<td><img src="https://reincubate.com/res/labs/llk/gifs/lln.gif"></td>
+		<td>Focus-less control, similar to LLB.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>LothianLite Text</td>
+		<td><img src="https://reincubate.com/res/labs/llk/gifs/llx.gif"></td>
+		<td>Similar features to LLP, but allows for run-time text entry.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>LothianLite Tab</td>
+		<td><img src="https://reincubate.com/res/labs/llk/gifs/lla.gif"></td>
+		<td>(Still in beta)</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>LothianLite Tick</td>
+		<td><img src="https://reincubate.com/res/labs/llk/gifs/llt.gif"></td>
+		<td>The tick box can be customised with the standard LLK 3D settings.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>LothianLite Caption</td>
+		<td><img src="https://reincubate.com/res/labs/llk/gifs/llc.gif"></td>
+		<td>Caption with run-time generated customisable gradients and bevels. Here the caption is redrawing the window to match the desktop colour.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>LothianLite Label</td>
+		<td><img src="https://reincubate.com/res/labs/llk/gifs/lll.gif"></td>
+		<td>Flicks between two different fonts and colours for mouse off and mouse over.</td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<td class="title" colspan="4"><a name="downloads">LothianLite Kit Downloads</a></td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">available as:</td>
+		<td class="desc">type:</td>
+		<td class="desc">size &amp; location:</td>
+		<td class="desc">build language:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><a href="https://reincubate.com/res/labs/llk/sllk114.zip"><b>1.1.4</b> Freeware without run-time libraries</a></td>
+		<td>100k @ reincubate.com</td>
+		<td>VB6</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><a href="https://reincubate.com/res/labs/llk/sllk.html"><b>1.1.4</b> Freeware view / install online</a></td>
+		<td>105k @ reincubate.com</td>
+		<td>IE4+</td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<td class="title" colspan="4"><a name="troubleshooting">Troubleshooting</a></td>
+	</tr>
+	<tr>
+		<td class="desc">common problems:</td>
+		<td>
+			If everything goes pear-shaped then this section should help to narrow down the fault to a workable solution.
+			<ul>
+				<b>Q.</b> When I add place a LothianLiteButton, LothianLiteLabel or other mouse sensitive control in a LothianLitePanel, it behaves unusually. How can this be remedied?<br>
+				<b>A.</b> Due to the nature of mouse sensitive controls they do not happily co-exist in the same area. With the exception of implementing an object server (which we are considering) it is not easy to do. One solution is to avoid placing sensitive controls in LothianLitePanels,  but the easiest way is to set the LothianLitePanel's Enabled property to "False" - this will prevent the LothianLitePanel from being mouse sensitive.
+				<br><br>
+				<b>Q.</b> The LothianLiteLabel controls have an opaque background. Is there anyway to change this?<br>
+				<b>A.</b> This is a fault with our development language which at present cannot be fixed without detrimental side-effects.
+				<font class="hilight">This has been fixed as of release 1.1.2!</font>
+				<br><br>
+				<b>Q.</b> Tool-tips only show from the LothianLite Divider. Why is this?<br>
+				<b>A.</b> The tool-tip handler is stopped from accessing the other controls because of several calls they make.
+				<font class="hilight">This has been fixed as of release 1.1.4!</font>
+			</ul>
+		</td>
+	</tr>
+</table>
+
+
+<table>
+	<tr>
+		<td class="title" colspan="4"><a name="llb">LothianLite Button</a></td>
+	</tr>
+	<tr>
+		<td class="desc">included in:</td>
+		<td colspan="3">Licensed &amp; Freeware</td>
+	</tr>
+	<tr>
+		<td class="desc">main features:</td>
+		<td colspan="3">
+			<ul>
+				<li>Fully customisable appearance for normal, depressed, and mouse over states.</li>
+				<li>Intelligent colour regeneration for 3D appearance.</li>
+				<li>Supports text and graphics in one of four arrangements.</li>
+				<li>Uses <i>Catch</i> property to act as a depressable option button.</li>
+				<li>Different graphics can be specified for disabled and depressed states.</li>
+				<li>Provides hyperlinking ability with <i>Hyperlink</i> property.</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td class="desc">suggested notation:</td>
+		<td colspan="3">llb</td>
+	</tr>
+	<tr>
+		<td class="desc">known bugs:</td>
+		<td colspan="3">None</td>
+	</tr>
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">properties:</td>
+		<td class="desc">name:</td>
+		<td class="desc">description:</td>
+		<td class="desc">object type:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td>AlignImage</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>BodyColour</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><b>Caption</b></td>
+		<td></td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Catch</td>
+		<td></td>
+		<td>Boolean</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Colour</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>ColourUp</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Enabled</td>
+		<td></td>
+		<td>Boolean</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Font</td>
+		<td></td>
+		<td>StdFont</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>FontUp</td>
+		<td></td>
+		<td>StdFont</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Hyperlink</td>
+		<td></td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Is_Down</td>
+		<td></td>
+		<td>Boolean</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_DownIn</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_DownOut</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_FlatIn</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_FlatOut</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_UpIn</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_UpOut</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Picture</td>
+		<td></td>
+		<td>StdPicture</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>PictureDisabled</td>
+		<td></td>
+		<td>StdPicture</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>PictureDown</td>
+		<td></td>
+		<td>StdPicture</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">events:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Event Click()</td>
+		<td>Raised when the object is clicked in any way - with the mouse or keyboard.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse is depressed on the object.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse is moved over the object.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse button is released over the object.</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">methods:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Sub About()</td>
+		<td>Triggers LLK information message, with control and license specific status.</td>
+	</tr>
+</table>
+
+
+<table>
+	<tr>
+		<td class="title" colspan="4"><a name="llc">LothianLite Caption</a></td>
+	</tr>
+	<tr>
+		<td class="desc">included in:</td>
+		<td colspan="3">Licensed &amp; Freeware</td>
+	</tr>
+	<tr>
+		<td class="desc">main features:</td>
+		<td colspan="3">
+			<ul>
+				<li>Caption gradients are fully customisable, or can be set to match Windows '98 / 2000 gradients.</li>
+				<li>Bevelled appearance to match other LLK controls.</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td class="desc">suggested notation:</td>
+		<td colspan="3">llc</td>
+	</tr>
+	<tr>
+		<td class="desc">known bugs:</td>
+		<td colspan="3">None</td>
+	</tr>
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">properties:</td>
+		<td class="desc">name:</td>
+		<td class="desc">description:</td>
+		<td class="desc">object type:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td>BodyColour</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>ColourRight</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Direction</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>GradientRight</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">events:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">methods:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Sub About()</td>
+		<td>Triggers LLK information message, with control and license specific status.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Sub subInitialise()</td>
+		<td>Starts the LLC. This method needs to be invoked for the LLC to work.</td>
+	</tr>
+
+</table>
+
+<table>
+	<tr>
+		<td class="title" colspan="4"><a name="lld">LothianLite Divider</a></td>
+	</tr>
+	<tr>
+		<td class="desc">included in:</td>
+		<td colspan="3">Licensed &amp; Freeware</td>
+	</tr>
+	<tr>
+		<td class="desc">main features:</td>
+		<td colspan="3">
+			<ul>
+				<li>Intelligent colour regeneration for 3D appearance.</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td class="desc">suggested notation:</td>
+		<td colspan="3">lld</td>
+	</tr>
+	<tr>
+		<td class="desc">known bugs:</td>
+		<td colspan="3">None</td>
+	</tr>
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">properties:</td>
+		<td class="desc">name:</td>
+		<td class="desc">description:</td>
+		<td class="desc">object type:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td>BodyColour</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><b>Direction</b></td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">events:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">methods:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Sub About()</td>
+		<td>Triggers LLK information message, with control and license specific status.</td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<td class="title" colspan="4"><a name="lll">LothianLite Label</a></td>
+	</tr>
+	<tr>
+		<td class="desc">included in:</td>
+		<td colspan="3">Licensed &amp; Freeware</td>
+	</tr>
+	<tr>
+		<td class="desc">main features:</td>
+		<td colspan="3">
+			<ul>
+				<li>Fully customisable appearance for normal, depressed, and mouse over states.</li>
+				<li>Text fade-up gradients are fully customisable.</li>
+				<li>Provides hyperlinking ability with <i>Hyperlink</i> property.</li>
+				<li>Now has transparent background.</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td class="desc">suggested notation:</td>
+		<td colspan="3">lll</td>
+	</tr>
+	<tr>
+		<td class="desc">known bugs:</td>
+		<td colspan="3">None</td>
+	</tr>
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">properties:</td>
+		<td class="desc">name:</td>
+		<td class="desc">description:</td>
+		<td class="desc">object type:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td>Align</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>BodyColour</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><b>Caption</b></td>
+		<td></td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Colour</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>ColourUp</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Font</td>
+		<td></td>
+		<td>StdFont</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>FontUp</td>
+		<td></td>
+		<td>StdFont</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Hyperlink</td>
+		<td></td>
+		<td>String</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">events:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Event Click()</td>
+		<td>Raised when the object is clicked.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse is depressed on the object.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse is moved over the object.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse button is released over the object.</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">methods:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Sub About()</td>
+		<td>Triggers LLK information message, with control and license specific status.</td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<td class="title" colspan="4"><a name="lln">LothianLite Non-Modal Button</a></td>
+	</tr>
+	<tr>
+		<td class="desc">included in:</td>
+		<td colspan="3">Licensed &amp; Freeware</td>
+	</tr>
+	<tr>
+		<td class="desc">main features:</td>
+		<td colspan="3">
+			<ul>
+				<li>Fully customisable appearance for normal, depressed, and mouse over states.</li>
+				<li>Intelligent colour regeneration for 3D appearance.</li>
+				<li>Supports text or graphics with no modal focus or focus lines.</li>
+				<li>Uses <i>Catch</i> property to act as a depressable option button.</li>
+				<li>Different graphics can be specified for disabled and depressed states.</li>
+				<li>Provides hyperlinking ability with <i>Hyperlink</i> property.</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td class="desc">suggested notation:</td>
+		<td colspan="3">lln</td>
+	</tr>
+	<tr>
+		<td class="desc">known bugs:</td>
+		<td colspan="3">None</td>
+	</tr>
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">properties:</td>
+		<td class="desc">name:</td>
+		<td class="desc">description:</td>
+		<td class="desc">object type:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td>BodyColour</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><b>Caption</b></td>
+		<td></td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Catch</td>
+		<td></td>
+		<td>Boolean</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Colour</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>ColourUp</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Enabled</td>
+		<td></td>
+		<td>Boolean</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Font</td>
+		<td></td>
+		<td>StdFont</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>FontUp</td>
+		<td></td>
+		<td>StdFont</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Hyperlink</td>
+		<td></td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Is_Down</td>
+		<td></td>
+		<td>Boolean</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_DownIn</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_DownOut</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_FlatIn</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_FlatOut</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_UpIn</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_UpOut</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Picture</td>
+		<td></td>
+		<td>StdPicture</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>PictureDisabled</td>
+		<td></td>
+		<td>StdPicture</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>PictureDown</td>
+		<td></td>
+		<td>StdPicture</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">events:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Event Click()</td>
+		<td>Raised when the object is clicked in any way - with the mouse or keyboard.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse is depressed on the object.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse is moved over the object.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse button is released over the object.</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">methods:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Sub About()</td>
+		<td>Triggers LLK information message, with control and license specific status.</td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<td class="title" colspan="4"><a name="llp">LothianLite Panel</a></td>
+	</tr>
+	<tr>
+		<td class="desc">included in:</td>
+		<td colspan="3">Licensed &amp; Freeware</td>
+	</tr>
+	<tr>
+		<td class="desc">main features:</td>
+		<td colspan="3">
+			<ul>
+				<li>Fully customisable appearance for normal, depressed, and mouse over states.</li>
+				<li>Intelligent colour regeneration for 3D appearance.</li>
+				<li>Tileable background with the <i>Background</i> property, gradiented patterns can be rendered with the <i>Grad_Bot</i>, <i>Grad_Top</i>, <i>Gradient</i> properties.</li>
+				<li>Fully functional as a progress bar with the <i>Percentage</i> property.</li>
+				<li>OLE Drap and Drop compatibility.</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td class="desc">suggested notation:</td>
+		<td colspan="3">llp</td>
+	</tr>
+	<tr>
+		<td class="desc">known bugs:</td>
+		<td colspan="3">None</td>
+	</tr>
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">properties:</td>
+		<td class="desc">name:</td>
+		<td class="desc">description:</td>
+		<td class="desc">object type:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td>Background</td>
+		<td></td>
+		<td>StdPicture</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>BodyColour</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Border</td>
+		<td></td>
+		<td>Integer</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><b>Caption</b></td>
+		<td></td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Colour</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>ColourUp</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Enabled</td>
+		<td></td>
+		<td>Boolean</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Font</td>
+		<td></td>
+		<td>StdFont</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>FontUp</td>
+		<td></td>
+		<td>StdFont</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Gradient</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Grad_Bot</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Grad_Top</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_FlatIn</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_FlatOut</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_UpIn</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_UpOut</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Percentage</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">events:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Event Click()</td>
+		<td>Raised when the object is clicked.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse is depressed on the object.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse is moved over the object.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse button is released over the object.</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">methods:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Sub About()</td>
+		<td>Triggers LLK information message, with control and license specific status.</td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<td class="title" colspan="4"><a name="lla">LothianLite Tab</a></td>
+	</tr>
+	<tr>
+		<td class="desc">included in:</td>
+		<td colspan="3">No public release</td>
+	</tr>
+	<tr>
+		<td class="desc">main features:</td>
+		<td colspan="3">
+			<ul>
+				<li>Fully customisable appearance for normal, depressed, and mouse over states.</li>
+				<li>Intelligent colour regeneration for 3D appearance.</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td class="desc">suggested notation:</td>
+		<td colspan="3">lla</td>
+	</tr>
+	<tr>
+		<td class="desc">known bugs:</td>
+		<td colspan="3">None</td>
+	</tr>
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">properties:</td>
+		<td class="desc">name:</td>
+		<td class="desc">description:</td>
+		<td class="desc">object type:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td>BodyColour</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">events:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Event Click()</td>
+		<td>Raised when the object is clicked.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse is depressed on the object.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse is moved over the object.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse button is released over the object.</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">methods:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Sub About()</td>
+		<td>Triggers LLK information message, with control and license specific status.</td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<td class="title" colspan="4"><a name="llx">LothianLite Text</a></td>
+	</tr>
+	<tr>
+		<td class="desc">included in:</td>
+		<td colspan="3">Licensed &amp; Freeware</td>
+	</tr>
+	<tr>
+		<td class="desc">main features:</td>
+		<td colspan="3">
+			<ul>
+				<li>Fully customisable appearance for normal, depressed, and mouse over states.</li>
+				<li>Intelligent colour regeneration for 3D appearance.</li>
+				<li>Tileable background with the <i>Background</i> property, gradiented patterns can be rendered with the <i>Grad_Bot</i>, <i>Grad_Top</i>, <i>Gradient</i> properties.</li>
+				<li>Fully functional as a progress bar with the <i>Percentage</i> property.</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td class="desc">suggested notation:</td>
+		<td colspan="3">llx</td>
+	</tr>
+	<tr>
+		<td class="desc">known bugs:</td>
+		<td colspan="3">Multiline function not implemented. Non-ANSI characters not handled correctly.</td>
+	</tr>
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">properties:</td>
+		<td class="desc">name:</td>
+		<td class="desc">description:</td>
+		<td class="desc">object type:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td>Align</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Background</td>
+		<td></td>
+		<td>StdPicture</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>BodyColour</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Border</td>
+		<td></td>
+		<td>Integer</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Colour</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>ColourUp</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Enabled</td>
+		<td></td>
+		<td>Boolean</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Font</td>
+		<td></td>
+		<td>StdFont</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>FontUp</td>
+		<td></td>
+		<td>StdFont</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Gradient</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Grad_Bot</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Grad_Top</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_FlatIn</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_FlatOut</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_UpIn</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_UpOut</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Multiline</td>
+		<td></td>
+		<td>Boolean</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Percentage</td>
+		<td></td>
+		<td>Integer</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><b>Text</b></td>
+		<td></td>
+		<td>String</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">events:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Event Click()</td>
+		<td>Raised when the object is clicked.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse is depressed on the object.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse is moved over the object.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse button is released over the object.</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">methods:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Sub About()</td>
+		<td>Triggers LLK information message, with control and license specific status.</td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<td class="title" colspan="4"><a name="llt">LothianLite Tick</a></td>
+	</tr>
+	<tr>
+		<td class="desc">included in:</td>
+		<td colspan="3">Licensed &amp; Freeware</td>
+	</tr>
+	<tr>
+		<td class="desc">main features:</td>
+		<td colspan="3">
+			<ul>
+				<li>Fully customisable appearance for normal, depressed, and mouse over states.</li>
+				<li>Intelligent colour regeneration for 3D appearance.</li>
+				<li>Different graphics can be specified for checked state.</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td class="desc">suggested notation:</td>
+		<td colspan="3">llt</td>
+	</tr>
+	<tr>
+		<td class="desc">known bugs:</td>
+		<td colspan="3">None</td>
+	</tr>
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">properties:</td>
+		<td class="desc">name:</td>
+		<td class="desc">description:</td>
+		<td class="desc">object type:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td>Align</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>BodyColour</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Caption</td>
+		<td></td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>CheckStyle</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Colour</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>ColourUp</td>
+		<td></td>
+		<td>OLE_COLOR</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Font</td>
+		<td></td>
+		<td>StdFont</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>FontUp</td>
+		<td></td>
+		<td>StdFont</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_DownIn</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_DownOut</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_FlatIn</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_FlatOut</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_UpIn</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Look_UpOut</td>
+		<td></td>
+		<td>Integer*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><b>Value</b></td>
+		<td></td>
+		<td>OLE_TRISTATE</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">events:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Event Click()</td>
+		<td>Raised when the object is clicked in any way - with the mouse or keyboard.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse is depressed on the object.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse is moved over the object.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)</td>
+		<td>Raised when the mouse button is released over the object.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2">Event ValueChange()</td>
+		<td>Raised when the LLT's value is changed through checking or unchecking.</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td class="desc">methods:</td>
+		<td class="desc" colspan="2">declaration:</td>
+		<td class="desc">description:</td>
+	</tr>
+
+	<tr>
+		<td class="desc" colspan="4"></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td colspan="2">Sub About()</td>
+		<td>Triggers LLK information message, with control and license specific status.</td>
+	</tr>
+</table>
